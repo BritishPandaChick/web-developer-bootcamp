@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Exercise</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form>
+      <div>
+        <label for="first">First Name:
+          <input id="first" name="first" type="text" placeholder="John" required>
+        </label>
+
+        <label for="last">Last Name:
+          <input id="last" name="last" type="text" placeholder="Smith" required>
+        </label>
+      </div>
+
+      <div>
+        <label for="male">Male
+          <input name="gender" id="male" type="radio" value="male">
+        </label>
+        <label for="female">Female
+          <input name="gender" id="female" type="radio" value="female">
+        </label>
+        <label for="other">Other
+          <input name="gender" id="other" type="radio" value="other">
+        </label>
+      </div>
+
+      <div>
+        <label for="email">Email:
+          <input id="email" name="email" type="email" placeholder="your email" required>
+        </label>
+        <label for="password">Password:
+          <input id="password" name="password" type="password" placeholder="your password" pattern=".{5,10}" required title="Password must be between 5 to 10 characters">
+        </label>
+      </div>
+
+      <div>
+        <label for="select-choice">Birthday:
+          <select id="select-choice" name="month">
+            <option>Month</option>
+            <option>January</option>
+            <option>December</option>
+          </select>
+
+          <select id="select-choice" name="day">
+            <option>Day</option>
+            <option>1</option>
+            <option>31</option>
+          </select>
+
+          <select id="select-choice" name="year">
+            <option>Year</optioin>
+            <option>1929</option>
+            <option>1999</option>
+          </select>
+        </label>
+      </div>
+
+      <!--Validate form code
+      <fieldset>
+        <legend>Birthday:</legend>
+        <label for="month">Month:</label>
+        <select id="month" name="month">
+          <option>January</option>
+          <option>December</option>
+        </select>
+
+        <label for="day" id="day">
+        <select id="day" name="day">
+          <option>1</option>
+          <option>31</option>
+        </select>
+
+        <label for="year" name="year">
+        <select id="year" name="year">
+          <option>1929</option>
+          <option>1999</option>
+        </select>
+      </fieldset> -->
+      <div>
+        <label for="agreed">I agree to the terms and conditions
+          <input type="checkbox" id="agreed" name="agreed">
+        </label>
+      </div>
+
+      <input type="submit">
+    </form>
+  </body>
+</html>
